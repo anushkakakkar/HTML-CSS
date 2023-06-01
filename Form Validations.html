@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      .content {
+        max-width: 500px;
+        margin: auto;
+      }
+    </style>
+    <title>My page</title>
+  </head>
+  <body>
+    <div class="content">
+    <form>
+        <label for="fname">First Name</label><br><br>
+        <input type="text" id="fname" name="fname" required><br><br>
+        <label for="lname">Last Name</label><br><br>
+        <input type="text" id="lname" name="lname" required><br><br>
+        <label for="pass">Password</label><br><br>
+        <input type="password" id="pass" name="pass" maxlength="10"><br><br>
+        <fieldset><br>
+            <legend>Do You have driving license?</legend>
+            <label for="Yes">Yes</label>
+            <input type="radio" name="Yes">
+            <label for="No">No</label>
+            <input type="radio" name="No">
+        </fieldset><br>
+        <label for="Age">Age</label><br>
+        <input list="Age">
+            <datalist id="Age">
+                <option value="18">18</option>
+                <option value="19">19</option>
+                <option value="20">20</option>
+            </datalist><br>
+        <label for="msg">Leave a short message</label><br>
+        <textarea id="msg" name="msg"></textarea><br>
+        <button>submit</button>
+          </div>
+    </form>
+  </body>
+</html>
+        
+
