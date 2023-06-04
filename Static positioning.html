@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  
+    <title>Static positioning</title>
+
+    <style>
+      body {
+        width: 500px;
+        margin: 0 auto;
+      }
+
+      p {
+        background: aqua;
+        border: 3px solid blue;
+        padding: 10px;
+        margin: 10px;
+      }
+
+      span {
+        background: red;
+        border: 1px solid black;
+      }
+
+      .positioned {
+        position: static;
+        background: yellow;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Static positioning</h1>
+
+    <p>I am a basic block level element. My adjacent block level elements sit on new lines below me.</p>
+
+    <p class="positioned">By default we span 100% of the width of our parent element, and our are as tall as our child content. Our total width and height is our content + padding + border width/height.</p>
+
+    <p>We are separated by our margins. Because of margin collapsing, we are separated by the width of one of our margins, not both.</p>
+
+    <p>inline elements <span>like this one</span> and <span>this one</span> sit on the same line as one another, and adjacent text nodes, if there is space on the same line. Overflowing inline elements <span>wrap onto a new line if possible — like this one containing text</span>, or just go on to a new line if not, much like this image will do: <img src="data:image/png;base64,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" alt="a wide but short section of a photo of several fabrics"></p>
+
+  </body>
+</html>
